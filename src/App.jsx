@@ -21,7 +21,6 @@ const App = () => {
     tempElement.innerHTML = text;
     return tempElement.textContent || tempElement.innerText || "";
   };
-  console.log(import.meta.env.VITE_USERNAME);
   useEffect(() => {
     if ("webkitSpeechRecognition" in window) {
       const SpeechRecognition =
